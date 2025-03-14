@@ -45,7 +45,7 @@ function displayLibrary() {
                 deleteButton.className = 'delete-btn';
                 deleteButton.textContent = 'Delete';
                 tableData.appendChild(deleteButton);
-                newTableRow.dataset.bookId = book[prop]; // Adds id to book's row
+                newTableRow.dataset.bookId = book[prop]; // Adds book id to entire row
             } else if (prop === 'hasRead') {
                 let readCheckBox = document.createElement('input');                
                 readCheckBox.type = 'checkbox';
@@ -98,3 +98,8 @@ function handleLibraryInteraction(e) {
 document.querySelector('#addBook').addEventListener('click', () => {
     document.querySelector('dialog').showModal();
 });
+
+addBookToLibrary('The Hobbit', 'J.R.R. Tolkien', 1937, false);
+addBookToLibrary('1984', 'George Orwell', 1949, true);
+addBookToLibrary('Neuromancer', 'William Gibson', 1984, true);
+displayLibrary();

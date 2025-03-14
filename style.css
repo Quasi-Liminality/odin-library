@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+}
+
+button#addBook {
+    place-self: end;
+    position: relative;
+    bottom: -2.2rem;
+}
+
+dialog fieldset {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 5px;
+
+    & [type=checkbox] {
+        justify-self: start;
+    }
+
+    & button {
+        grid-column: span 2;
+    }
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    & caption {
+        font-size: 1.5rem;
+        font-family: system-ui;
+        font-weight: 400;
+        padding: 5px;
+    }
+    & th, td {
+        padding: 10px 1.5rem;
+        border: 1px solid #000;
+    }
+
+    & td {
+        text-align: end;
+    }
+
+    & td:nth-child(n+3) {
+        text-align: center;
+    }
+}

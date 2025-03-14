@@ -4,15 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="library.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Odin Library</title>
-    <style>
-        body {
-            display: grid;
-            min-height: 100vh;
-            place-items: center;
-        }
-
-    </style>
 </head>
 <body>
     <button id="addBook">Add Book</button>
@@ -37,14 +30,16 @@
             </fieldset>
         </form>
     </dialog>
+
     <table class="books">
+        <caption>My Library</caption>
         <thead>
             <tr>
-                <th>Book Title</th>
-                <th>Author's Name</th>
-                <th>Year</th>
-                <th>Read</th>
-                <th>Delete</th>
+                <th scope="col">Book Title</th>
+                <th scope="col">Author's Name</th>
+                <th scope="col">Year</th>
+                <th scope="col">Read</th>
+                <th scope="col">Delete</th>
             </tr>
         </thead>
         <tbody></tbody>
