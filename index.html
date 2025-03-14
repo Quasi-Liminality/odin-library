@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="library.js" defer></script>
+    <title>Odin Library</title>
+    <style>
+        body {
+            display: grid;
+            min-height: 100vh;
+            place-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="addBook">Add Book</button>
+    <dialog>
+        <form action="" method="dialog">
+            <fieldset>
+                <legend>Book details</legend>
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="year">Year</label>
+                <input type="number" id="year" name="year" required>
+
+                <label for="hasRead">Read:</label>
+                <input type="checkbox" id="hasRead" name="hasRead">
+
+                <button id="submitBook">Submit</button>
+            </fieldset>
+        </form>
+    </dialog>
+    <table class="books">
+        <thead>
+            <tr>
+                <th>Book Title</th>
+                <th>Author's Name</th>
+                <th>Year</th>
+                <th>Read</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+</body>
+</html>
